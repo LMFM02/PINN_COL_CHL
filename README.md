@@ -16,17 +16,19 @@ Una vez se crea el entorno virtual, puede instalarlas directamente usando **pip 
 ```  
 📁 PINN_COL_CHL/  
 ├── 📁 Krotov/  
-|   └── 📓 KROTOV_Article_Fanchini_V2.ipynb     #Codigo de la compuerta Hadamard en un qubit
-|   └── 📓 KROTOV_CNOT.ipynb                    #Codigo de la compuerta CNOT usando un acople XX
 ├── 📁 src/  
-│   └── 📄 gate_pinn_module.py                  #Modulo para la prediccion de controles en compuertas
+│   └── 📄 objetives.py                     #Metodo fuente para los objetivos modificada
+|   📓 KROTOV_Article_Fanchini_V2.ipynb     #Codigo de la compuerta Hadamard en un qubit
+|   📓 KROTOV_CNOT.ipynb                    #Codigo de la compuerta CNOT usando un acople XX
+├── 📁 src/  
+│   └── 📄 gate_pinn_module.py              #Modulo para la prediccion de controles en compuertas
 └── 📄 README.md  
-├── 📁 Notebooks/                               #Notebooks de barrido de (lr-n) para la compuerta                          
-│   └── 📓 Sweep_CNOT_Hxx.ipynb                 #CNOT (acoples Hxx, Hyy, Hzz) y la compuerta Hadamard.
+├── 📁 Notebooks/                           #Notebooks de barrido de (lr-n) para la compuerta                          
+│   └── 📓 Sweep_CNOT_Hxx.ipynb             #CNOT (acoples Hxx, Hyy, Hzz) y la compuerta Hadamard.
 │   └── 📓 Sweep_CNOT_Hyy.ipynb  
 |   └── 📓 Sweep_CNOT_Hzz.ipynb  
 |   └── 📓 Sweep_Hadamard.ipynb   
-├── 📄 requirements.txt                         #Dependencias necesarias para ejecutar los notebooks
+├── 📄 requirements.txt                     #Dependencias necesarias para ejecutar los notebooks
 ```
 
 ## **Estructura de los notebooks**
