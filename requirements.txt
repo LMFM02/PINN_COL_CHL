@@ -1,0 +1,8 @@
+ipython==8.24.0
+jupyter>=1.0
+matplotlib==3.9.1
+matplotlib-inline==0.1.7
+numpy==1.26.4
+qutip==5.0.1
+sympy==1.12
+torch==2.3.0
