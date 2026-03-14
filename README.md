@@ -15,7 +15,7 @@ git clone https://github.com/LMFM02/PINN_COL_CHL.git
 python3 --version
 
 ``# Crear entorno virtual (python ó python3)``  
-python3 -m venv sweep_env   ``# Linux/Mac``  
+python3 -m venv sweep_env     
 source sweep_env/bin/activate  ``# Linux/Mac``  
 sweep_env\Scripts\activate  ``# Windows``   
 
