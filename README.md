@@ -11,6 +11,9 @@ El barrido se centra en dos hiperparámetros:
 `` # Clonar el repositorio``  
 git clone https://github.com/LMFM02/PINN_COL_CHL.git
 
+`` # Acceder a la ruta del repositorio creado`` 
+cd PINN_COL_CHL
+
 `` # Verificar version de python``  
 python3 --version
 
