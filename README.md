@@ -38,23 +38,25 @@ pip install -r requirements.txt
 |       └── 📄 Krotov’s method for quantum optimal control.pdf
 ├── 📁 Krotov/  
 |   └── 📁 src/  
-│       └── 📄 objetives.py                 #Metodo fuente para los objetivos modificada
+│       └── 📄 objetives.py                 #Metodo fuente para los objetivos, modificada
 |   📓 KROTOV_Article_Fanchini_V2.ipynb     #Codigo de la compuerta Hadamard en un qubit
 |   📓 KROTOV_CNOT.ipynb                    #Codigo de la compuerta CNOT usando un acople XX
-├── 📁 src/  
-│   └── 📄 gate_pinn_module.py              #Modulo para la prediccion de controles en compuertas
-└── 📄 README.md  
 ├── 📁 Notebooks/                           #Notebooks de barrido de (lr-n) para la compuerta                          
 │   └── 📓 Sweep_CNOT_Hxx.ipynb             #CNOT (acoples Hxx, Hyy, Hzz) y la compuerta Hadamard.
 │   └── 📓 Sweep_CNOT_Hyy.ipynb  
 |   └── 📓 Sweep_CNOT_Hzz.ipynb  
-|   └── 📓 Sweep_Hadamard.ipynb   
+|   └── 📓 Sweep_Hadamard.ipynb 
+├── 📁 src/  
+│   └── 📄 gate_pinn_module.py              #Modulo para la prediccion de controles en compuertas
+├── 📁 Test/  
+│   └── 📓 Best_scenario.ipynb              #Notebook para testear el mejor entrenamiento.
+└── 📄 README.md    
 ├── 📄 requirements.txt                     #Dependencias necesarias para ejecutar los notebooks
 ```
 
 ## **Estructura de los notebooks (PINN)**
 
-En los notebooks se encuentra la estructura necesaria para la modelar la compuerta Hadamard y CNOT, de tal forma que sea consistente con el modulo PINN que se encuentra en **src/**.
+En los notebooks se encuentra la estructura necesaria para modelar la compuerta Hadamard y CNOT, de tal forma que sea consistente con el modulo PINN que se encuentra en **src/**.
 
 En cada notebook se planteo la siguiente estructura:
 - **Se define el esquema de PINN de acuerdo a la compuerta.** 
