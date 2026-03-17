@@ -82,7 +82,22 @@ Durante el entrenamiento, un bucle itera sucesivamente sobre cada par de hiperpa
 
 Una vez finaliza la ejecución del bucle de entrenamiento, se genera automáticamente un archivo binario que almacena los resultados obtenidos. El nombre del archivo incluye la compuerta considerada, los parámetros que fueron barridos y el rango en el que se realizó. En el caso de la compuerta CNOT, el nombre del archivo también incorpora el tipo de acople utilizado durante el entrenamiento.
 
-Finalmente el archivo binario, contiene los parametros de red del entrenamiento, la fidelidad promedio evaluada, las funciones de control predichas y la perdida tanto total como parcial del modelo de entrenamiento. **El archivo binario generado al finalizar el proceso será el que se compartirá.**
+Finalmente el archivo binario, contiene los parametros de red del entrenamiento, la fidelidad promedio evaluada, las funciones de control predichas y la perdida tanto total como parcial del modelo de entrenamiento. **El archivo binario generado al finalizar el proceso será el que se compartirá.**  
+
+### **⚠️ ¡Importante!**
+En la carpeta **Test** se incluye el notebook **Best_scenario.ipynb**, diseñado para ejecutarse una vez se realicen los barridos de hiperparámetros, para la compuerta CNOT y Hadamard.
+
+Este notebook permite:  
+
+- **Identificar el entrenamiento con la mayor fidelidad promedio para cada compuerta**
+
+- **Graficar la función de pérdida para la mejor fidelidad promedio**
+
+- **Visualizar los controles óptimos aprendidos**
+
+- **Realizar una grafica tipo 3D entre neuronas, learning rate y fidelidad promedio**
+
+Mediante este Notebook se testea si los hiperparametros explorados del barrido son adecuados, permitiendo determinar si es necesario ajustarlos o redefinir el espacio de búsqueda.
 
 # **Krotov para control cuantico**
 
